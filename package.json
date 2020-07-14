@@ -1,0 +1,35 @@
+{
+  "name": "nodejs-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "task1": "nodemon src/week1/task1",
+    "task1:babel": "npx babel-node src/week1/task3/task1",
+    "task2": "cd src/week1/task2 && nodemon index.js",
+    "task2:babel": "cd src/week1/task3/task2/ && npx babel-node app",
+    "task2:stream": "cd src/week1/task2/withStream && nodemon app.js",
+    "task2Stream:babel": "cd src/week1/task3/task2 && npx babel-node withStream.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fasibaag/Nodejs-Training.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fasibaag/Nodejs-Training/issues"
+  },
+  "homepage": "https://github.com/Fasibaag/Nodejs-Training#readme",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "json2csv": "^5.0.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.4",
+    "@babel/preset-env": "^7.10.4"
+  }
+}
